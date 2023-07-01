@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+label, input {
+    display: block;
+}
+label
+{
+    padding-bottom: 5px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 500px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 15px;
+    border: 1px solid rgb(99, 99, 99);
+}
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+.ai-difficulty-container {
+    display: flex;
+    width: auto;
+    height: 50px;
+    background-color: rgb(114, 114, 226);
+    padding: 5px 15px 0 15px;
+    border-radius: 15px 15px 0px 0px;
+}
+.player-symbol-container {
+    display: flex;
+    width: auto;
+    height: 75px;
+    background-color: rgb(226, 159, 159);
+    justify-content: center;
+
+}
+.symbol-button {
+    padding: 4px 75px 4px 75px;
+    margin: 10px 5px 10px 5px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 480px){
+    .container {
+        width: 100%;
+    }
+    .symbol-button {
+        margin: 10px 1px 10px 1px;
+    }
+}
