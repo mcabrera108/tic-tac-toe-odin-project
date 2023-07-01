@@ -32,7 +32,7 @@ label
     display: flex;
     width: auto;
     height: 50px;
-    background-color: rgb(114, 114, 226);
+    background-color: rgb(114, 114, 226,.25);
     padding: 5px 15px 0 15px;
     border-radius: 15px 15px 0px 0px;
 }
@@ -40,15 +40,33 @@ label
     display: flex;
     width: auto;
     height: 75px;
-    background-color: rgb(226, 159, 159);
+    background-color: rgb(226, 159, 159,.25);
     justify-content: center;
 
+}
+.gameboard-container {
+    display: flex;
+    height: 275px;
+    background-color: rgb(177, 241, 177,.25);
 }
 .symbol-button {
     padding: 4px 75px 4px 75px;
     margin: 10px 5px 10px 5px;
     border-radius: 10px;
     font-size: 1.5rem;
+}
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.restart-button {
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: rgba(211, 211, 95, 0.25);
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
 }
 @media screen and (max-width: 480px){
     .container {
