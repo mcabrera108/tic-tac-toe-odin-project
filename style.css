@@ -48,6 +48,10 @@ label
     display: flex;
     height: 275px;
     background-color: rgb(177, 241, 177,.25);
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .symbol-button {
     padding: 4px 75px 4px 75px;
@@ -68,6 +72,20 @@ label
     padding: 5px 15px 5px 15px;
     border-radius: 10px;
 }
+.tic-tac-toe-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    height: 100%;
+    width: 300px;
+}
+.grid-square {
+    border: 2px solid black;   
+}
+button:hover {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 480px){
     .container {
         width: 100%;
